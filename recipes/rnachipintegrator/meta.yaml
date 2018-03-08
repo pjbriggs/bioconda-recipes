@@ -14,11 +14,11 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  skip: true  # [not py27]
   number: 0
+  skip: true  # [not py27]
 
 requirements:
-  host:
+  build:
     - python
     - setuptools
     - xlsxwriter >=0.8.4
